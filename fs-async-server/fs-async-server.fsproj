@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>fs_async_server</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="AsyncExt.fs" />
+    <Compile Include="Connection.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Pipelines" Version="4.6.0-preview7.19362.9" />
+  </ItemGroup>
+
+</Project>
