@@ -2,7 +2,9 @@
 
 The purpose of this project is to measure the latecny of async sockets in F#/.Net (on Linux, using dotnet core)
 
-Thanks to Adgear/Samsung Ads for making it public
+**Thanks to Adgear/Samsung Ads for making it public**
+
+The project consists of two parts: the hammer and the server. The server is using async sockets. the hammer is half duplex transponder, sending packets and measuring the round trip time to get an answer. Async hammer, can yield up to 10x more packets, but requires heavy book-keeping on the side of the client.
 
 ## Dependencies
 on Ubuntu (for the hammer):
